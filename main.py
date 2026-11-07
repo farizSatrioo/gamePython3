@@ -4,10 +4,10 @@ print("=" * 35)
 print("       GAME TEBAK ANGKA")
 print("=" * 35)
 
-angka_rahasia = random.randint(1, 100)
+angka_rahasia = random.randint(1, 25)
 percobaan = 0
 
-print("\nSaya sudah memilih angka dari 1 sampai 100.")
+print("\nSaya sudah memilih angka dari 1 sampai 25.")
 print("Bisakah kamu menebaknya?")
 print("Ketik angka 0 untuk keluar.\n")
 
@@ -19,8 +19,8 @@ while True:
             print("Kamu keluar dari permainan!")
             break
 
-        if tebakan < 1 or tebakan > 100:
-            print("Masukkan angka antara 1 sampai 100!")
+        if tebakan < 1 or tebakan > 25:
+            print("Masukkan angka antara 1 sampai 25!")
             continue
 
         percobaan += 1
